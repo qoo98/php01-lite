@@ -1,6 +1,6 @@
 <?php
 session_start();
-$_SESSION['opinion'] = $_GET['opinion'];
+$_SESSION['opinion'] = $_POST['opinion'];
 ?>
 <!DOCTYPE html>
 <html>

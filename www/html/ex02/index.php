@@ -15,7 +15,7 @@ session_start();
   // 入力時に発生
   hoge.addEventListener('input', (event) => {
     //　入力された値を表示
-    obj.textContent = hoge.value.replace(/{/g, " {\n  ").replace(/;/g, ";\n  ").replace(/}/g, "}\n").replace(/:/g, ": ");
+    obj.textContent = hoge.value.replace(/{/g, " {\n  ").replace(/;/g, ";\n  ").replace(/}/g, "}\n\n").replace(/:/g, ": ");
     $_SESSION['before'] = hoge.value;
 
   });
